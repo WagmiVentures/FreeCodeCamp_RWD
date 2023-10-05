@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="P01_surveyformstyles.css">
+    <title>A Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Project 1: Survey Form</h1>
+    <p id="description">Please complete this survey form for Project Uno</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="your-name" id="name-label">Enter your name: 
+                <input type="text" id="name" placeholder="Your name here" required>
+            </label>
+            <label for="email" id="email-label">Enter your email: 
+                <input type="email" id="email" placeholder="your email here" required>
+            </label>
+            <label for="number" id="number-label">Enter your number: 
+                <input type="number" id="number" placeholder="your number here. i.e. 5" min="1" max="100" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Select One: 
+                <select name="" id="dropdown">
+                    <option value="1">Cake</option>
+                    <option value="2">Cat</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose your side</legend>
+            <label for="radio-1">
+                <input type="radio" name="radio-group" id="radio-1" value="foo">
+                Sith
+            </label>
+            <label for="radio-2">
+                <input type="radio" name="radio-group" id="radio-2" value="bar">
+                Jedi
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose your favorite Jedi</legend>
+            <label for="check-1">
+                <input type="checkbox" name="check-group" id="check-1" value="check">
+                Rey
+            </label>
+            <label for="check-2">
+                <input type="checkbox" name="check-group" id="check-2" value="mate">
+                Anakin
+            </label>
+            <label for="check-2">
+                <input type="checkbox" name="check-group" id="check-2" value="won">
+                The little green guy
+            </label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional note: </legend>
+            
+                <textarea name="" id="" cols="30" rows="10" placeholder="Anything else?"></textarea>
+        </fieldset>
+
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
